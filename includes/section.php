@@ -7,31 +7,31 @@
 
         <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/1.jpg)">
+          <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/4.jpg)">
             <div class="carousel-container">
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">The Best 2H-em Information </h2>
-                <p class="animate__animated animate__fadeInUp">We're In The 2H-em Of Helping You Start Your 2H-em</p>
+                <p class="animate__animated animate__fadeInUp">We're In The 2H-em Of Helping You Get all the materials you need</p>
                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/2.jpg)">
+          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/a.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">At vero eos et accusamus</h2>
+                <h2 class="animate__animated animate__fadeInDown">Assured materials</h2>
                 <p class="animate__animated animate__fadeInUp">Helping 2H-em Security & Peace of Mind for Your Family</p>
                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpg)">
+          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/Bg4.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">Temporibus autem quibusdam</h2>
-                <p class="animate__animated animate__fadeInUp">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
+                <h2 class="animate__animated animate__fadeInDown">2H&EM</h2>
+                <p class="animate__animated animate__fadeInUp">Health Hygiene&Events Management</p>
                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
             </div>

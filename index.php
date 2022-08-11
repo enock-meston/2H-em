@@ -139,7 +139,8 @@ include 'user/include/config.php';
                 <div class="single-icon">
                   <i class="bi bi-phone"></i>
                   <p>
-                    Call: +1 5589 55488 55<br>
+                    Call: +250788307559<br>
+                    or: +250784061966<br>
                     <span>Monday-Friday (9am-5pm)</span>
                   </p>
                 </div>
@@ -151,8 +152,8 @@ include 'user/include/config.php';
                 <div class="single-icon">
                   <i class="bi bi-envelope"></i>
                   <p>
-                    Email: info@example.com<br>
-                    <span>Web: www.example.com</span>
+                    Email: jirardc@gmail.com<br>
+                    or:  sindayigayaisaac5@gmail.com<br>
                   </p>
                 </div>
               </div>
@@ -254,8 +255,8 @@ include 'user/include/config.php';
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
                 <div class="footer-contacts">
-                  <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
+                  <p><span>Tel:</span> +250784061966</p>
+                  <p><span>Email:</span> jirardc@gmail.com</p>
                   <p><span>Working Hours:</span> 9am-5pm</p>
                 </div>
               </div>

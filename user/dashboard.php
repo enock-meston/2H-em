@@ -67,7 +67,11 @@ if (strlen($_SESSION['admin_id']) == 0) {
                                         <div class="col mr-2">
                                             <a href="product.php">
                                                 <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+<<<<<<< HEAD
                                                     Product
+=======
+                                                    Products
+>>>>>>> bc733dae52d197168b1a754d0f1cdcf4e86e9bfe
                                                 </div>
                                             </a>
                                             <div class="row no-gutters align-items-center">
