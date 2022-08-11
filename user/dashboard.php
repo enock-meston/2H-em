@@ -66,9 +66,9 @@ if (strlen($_SESSION['admin_id']) == 0) {
                                     <div class="row no-gutters align-items-center">
 
                                         <div class="col mr-2">
-                                            <a href="#">
+                                            <a href="product.php">
                                                 <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                    Users
+                                                    Products
                                                 </div>
                                             </a>
                                             <div class="row no-gutters align-items-center">
