@@ -49,7 +49,7 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="section-headline text-center">
-                <h2>Latest News</h2>
+                <h2>Our Products</h2>
               </div>
             </div>
           </div>
