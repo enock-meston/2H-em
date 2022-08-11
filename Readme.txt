@@ -1,6 +1,8 @@
-Thanks for downloading this template!
+1.Post Imanges sizes 
+===================
+850x530
 
-Template Name: eBusiness
-Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+2.bacgraound Imanges sizes 
+==========================
+1920x930
+
