@@ -255,8 +255,8 @@ include 'user/include/config.php';
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
                 <div class="footer-contacts">
-                  <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
+                  <p><span>Tel:</span> +250784061966</p>
+                  <p><span>Email:</span> jirardc@gmail.com</p>
                   <p><span>Working Hours:</span> 9am-5pm</p>
                 </div>
               </div>
