@@ -38,6 +38,7 @@
              <div class="bg-white py-2 collapse-inner rounded">
                  <h6 class="collapse-header">Customazition Products</h6>
                  <a class="collapse-item" href="product.php">Product</a>
+                 <a class="collapse-item" href="trash-post.php">Trashed Product</a>
              </div>
          </div>
      </li>

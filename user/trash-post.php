@@ -6,57 +6,26 @@ if (strlen($_SESSION['admin_id']) == 0) {
     header('location: idex.php');
 } else {
 
-
-    if (isset($_POST['addPro'])) {
-        
-        $proTitle = mysqli_real_escape_string($con,$_POST['prodTilte']);
-        $proDetail = mysqli_real_escape_string($con,$_POST['ProDetails']);
-        $prodPrice = $_POST['prodPrice'];
-        $ckeqquery = mysqli_query($con,"SELECT * FROM `producttbl` WHERE PostTitle = '".$_POST['prodTilte']."'");
-        if (mysqli_num_rows($ckeqquery)>0) {
-            $error="The Category you need to insert is already Exist";
-        }else {
-                    // images
-    $img_name = $_FILES['my_image']['name'];
-    $img_size = $_FILES['my_image']['size'];
-    $tmp_name = $_FILES['my_image']['tmp_name'];
-    $error = $_FILES['my_image']['error'];
-
-    $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
-	$img_ex_lc = strtolower($img_ex);
-    $allowed_exs = array("jpg","png");
-    if (in_array($img_ex_lc,$allowed_exs)) {
-            $new_img_name = uniqid("IMG-", true).'.'.$img_ex_lc;
-			$img_upload_path = 'thurmbnail/'.$new_img_name;
-            
-             if (move_uploaded_file($tmp_name, $img_upload_path)) {
-                 $imageSize = getimagesize("$img_upload_path");
-				if ($imageSize[0]!=850 AND $imageSize[1] != 530) {
-					$error = "Image Must Have Width of 850 pixel AND Heigth of 530 pixel";
-				}else{
-            $status=1;
-            $insertQuery=mysqli_query($con,"INSERT INTO `producttbl`(`PostTitle`, `PostDetails`,`prodPrice`,`thumbnail`,`status`) 
-            VALUES ('$proTitle','$proDetail','$prodPrice','$img_upload_path','$status')");
-            if ($insertQuery) {
-              $msg = "Now Product is Added";
-            }else {
-                $error = " there something Went Wrong";
-            }
-        }
-        }
-    }
-}
-    }
-
-
-
-    // remove product 
-if ($_GET['del']) {
-    $idi = $_GET['del'];
-    $status0 =0;
+        // restore product forev
+if ($_GET['res']) {
+    $idi = $_GET['res'];
+    $status0 =1;
     $updateRem = mysqli_query($con,"UPDATE `producttbl` SET `status`='$status0' WHERE pid ='$idi'");
     if ($updateRem) {
-        $msg ="Post removed now";
+        $msg ="Post Restored now";
+    } else {
+        $error = "Problem in Query";
+    }
+    
+}
+
+
+if ($_GET['forev']) {
+    $idi = $_GET['forev'];
+    $status0 =1;
+    $updateRem = mysqli_query($con,"DELETE FROM `producttbl` WHERE pid ='$idi'");
+    if ($updateRem) {
+        $msg ="Post deleted Forever";
     } else {
         $error = "Problem in Query";
     }
@@ -115,9 +84,6 @@ if ($_GET['del']) {
                     <!-- Content Row -->
                     <div class="row">
 
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#CategoryModal">Add <i
-                                class="fas fa-fw fa-plus"></i></a>
-
                     </div>
                     <hr>
                     
@@ -144,7 +110,7 @@ if ($_GET['del']) {
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Product List</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Deleted product</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -169,7 +135,7 @@ if ($_GET['del']) {
                                     </tfoot>
                                     <tbody>
                                         <?php 
-                                            $query = mysqli_query($con,"SELECT * FROM `producttbl` WHERE status=1");
+                                            $query = mysqli_query($con,"SELECT * FROM `producttbl` WHERE status=0");
                                             if (mysqli_num_rows($query)<=0) {
                                                 ?>
                                         <h1 style="color: red;">No data Founds !</h1>
@@ -187,7 +153,8 @@ if ($_GET['del']) {
                                             <td><?php echo $row1['prodPrice'];?></td>
                                             <td><?php echo $row1['date'];?></td>
                                             <td>
-                                                <a href="product.php?del=<?php echo $row1['pid'];?>" class="btn btn-danger btn-sm">Remove</a>
+                                                <a href="trash-post.php?res=<?php echo $row1['pid'];?>" class="btn btn-success btn-sm">Restore</a>
+                                                <a href="trash-post.php?forev=<?php echo $row1['pid'];?>" class="btn btn-danger btn-sm">Delete Forever</a>
                                             </td>
                                         </tr>
 
@@ -228,59 +195,7 @@ if ($_GET['del']) {
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <div class="modal fade" id="CategoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Product Form</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- transaction viewing Table -->
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <!-- form of adding Categories -->
-                            <form action="" method="POST" enctype="multipart/form-data">
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Product Title</label>
-                                    <input type="text" class="form-control" name="prodTilte" placeholder="Enter Product title">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Product Price</label>
-                                    <input type="number" class="form-control" name="prodPrice" placeholder="Enter Product Price">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1"> product Details</label>
-                                    <textarea class="form-control " required name="ProDetails"
-                                        id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Thumbnail Image
-                                        <sub style="color: red;">Image Must Have Width of 850 pixel AND Heigth of 530 pixel</sub> </label>
-                                    <input type="file" class="form-control" name="my_image" required accept=".png,.jpg">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-success" value="Save" name="addPro">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- end of table -->
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
 
     <!-- Bootstrap core JavaScript-->
     <script src="plugins/vendor/jquery/jquery.min.js"></script>

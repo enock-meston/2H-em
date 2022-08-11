@@ -64,11 +64,10 @@ if (strlen($_SESSION['admin_id']) == 0) {
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
-
                                         <div class="col mr-2">
-                                            <a href="#">
+                                            <a href="product.php">
                                                 <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                    Users
+                                                    Product
                                                 </div>
                                             </a>
                                             <div class="row no-gutters align-items-center">
@@ -85,7 +84,42 @@ if (strlen($_SESSION['admin_id']) == 0) {
                                         </div>
 
                                         <div class="col-auto">
-                                            <i class="fas fa-music fa-2x text-gray-300"></i>
+                                            <i class="fas fa-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end of product -->
+
+
+                        <!-- my product Musics -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <a href="trash-post.php">
+                                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                    Trash Products
+                                                </div>
+                                            </a>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <?php 
+                                                        $u_id = $_SESSION['admin_id'];
+                                                    $query = mysqli_query($con, "SELECT * from producttbl WHERE status= 0");
+                                                    $countposts = mysqli_num_rows($query);
+                                                    ?>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
+                                                        <?php echo htmlentities($countposts); ?></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <i class="fas fa-trash fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
