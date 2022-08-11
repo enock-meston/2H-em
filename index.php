@@ -28,8 +28,8 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: eBusiness - v4.8.0
-  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+  * Template Name: 2H-em - v4.8.0
+  * Template URL: https://bootstrapmade.com/2H-em-bootstrap-corporate-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -92,8 +92,8 @@
           <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/1.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">The Best Business Information </h2>
-                <p class="animate__animated animate__fadeInUp">We're In The Business Of Helping You Start Your Business</p>
+                <h2 class="animate__animated animate__fadeInDown">The Best 2H-em Information </h2>
+                <p class="animate__animated animate__fadeInUp">We're In The 2H-em Of Helping You Start Your 2H-em</p>
                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="carousel-container">
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">At vero eos et accusamus</h2>
-                <p class="animate__animated animate__fadeInUp">Helping Business Security & Peace of Mind for Your Family</p>
+                <p class="animate__animated animate__fadeInUp">Helping 2H-em Security & Peace of Mind for Your Family</p>
                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
             </div>
@@ -141,7 +141,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline text-center">
-              <h2>About eBusiness</h2>
+              <h2>About 2H-em</h2>
             </div>
           </div>
         </div>
@@ -504,7 +504,7 @@
                 <div class="add-actions text-center">
                   <div class="project-dec">
                     <a class="portfolio-lightbox" data-gallery="myGallery" href="assets/img/portfolio/1.jpg">
-                      <h4>Business City</h4>
+                      <h4>2H-em City</h4>
                       <span>Web Development</span>
                     </a>
                   </div>
@@ -870,7 +870,7 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
             <div class="suscribe-text text-center">
-              <h3>Welcome to our eBusiness company</h3>
+              <h3>Welcome to our 2H-em company</h3>
               <a class="sus-btn" href="#">Get A quote</a>
             </div>
           </div>
@@ -980,7 +980,7 @@
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
-                  <h2><span>e</span>Business</h2>
+                  <h2><span>2</span>H-em</h2>
                 </div>
 
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
@@ -1044,7 +1044,7 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
               <p>
-                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+                &copy; Copyright <strong>2H-em</strong>. All Rights Reserved
               </p>
             </div>
             <div class="credits">
@@ -1052,7 +1052,7 @@
               All the links in the footer should remain intact.
               You can delete the links only if you purchased the pro version.
               Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=2H-em
             -->
               Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
