@@ -11,7 +11,7 @@ if (strlen($_SESSION['admin_id']) == 0) {
         
         $proTitle = mysqli_real_escape_string($con,$_POST['prodTilte']);
         $proDetail = mysqli_real_escape_string($con,$_POST['ProDetails']);
-        
+        $prodPrice = $_POST['prodPrice'];
         $ckeqquery = mysqli_query($con,"SELECT * FROM `producttbl` WHERE PostTitle = '".$_POST['prodTilte']."'");
         if (mysqli_num_rows($ckeqquery)>0) {
             $error="The Category you need to insert is already Exist";
@@ -35,8 +35,8 @@ if (strlen($_SESSION['admin_id']) == 0) {
 					$error = "Image Must Have Width of 850 pixel AND Heigth of 530 pixel";
 				}else{
             $status=1;
-            $insertQuery=mysqli_query($con,"INSERT INTO `producttbl`(`PostTitle`, `PostDetails`, `thumbnail`,`status`) 
-            VALUES ('$proTitle','$proDetail','$img_upload_path','$status')");
+            $insertQuery=mysqli_query($con,"INSERT INTO `producttbl`(`PostTitle`, `PostDetails`,`prodPrice`,`thumbnail`,`status`) 
+            VALUES ('$proTitle','$proDetail','$prodPrice','$img_upload_path','$status')");
             if ($insertQuery) {
               $msg = "Now Product is Added";
             }else {
@@ -97,7 +97,6 @@ if (strlen($_SESSION['admin_id']) == 0) {
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <h3>Product</h3>
                     <!-- Content Row -->
                     <div class="row">
 
@@ -105,6 +104,8 @@ if (strlen($_SESSION['admin_id']) == 0) {
                                 class="fas fa-fw fa-plus"></i></a>
 
                     </div>
+                    <hr>
+                    
 
                     <!-- message block -->
                     <div class="col-sm-12">
@@ -137,6 +138,7 @@ if (strlen($_SESSION['admin_id']) == 0) {
                                         <tr>
                                             <th>N0</th>
                                             <th>Title</th>
+                                            <th>Price</th>
                                             <th>Date</th>
                                             <th>Action</th>
                                         </tr>
@@ -145,6 +147,7 @@ if (strlen($_SESSION['admin_id']) == 0) {
                                         <tr>
                                             <th>N0</th>
                                             <th>Title</th>
+                                            <th>Price</th>
                                             <th>Date</th>
                                             <th>Action</th>
                                         </tr>
@@ -166,10 +169,10 @@ if (strlen($_SESSION['admin_id']) == 0) {
                                         <tr>
                                             <td><?php echo $number;?></td>
                                             <td><?php echo $row1['PostTitle'];?></td>
+                                            <td><?php echo $row1['prodPrice'];?></td>
                                             <td><?php echo $row1['date'];?></td>
                                             <td>
-                                                <a href="#" class="btn btn-success">edit</a>
-                                                <a href="#" class="btn btn-danger">delete</a>
+                                                <a href="#" class="btn btn-danger btn-sm">Remove</a>
                                             </td>
                                         </tr>
 
@@ -229,6 +232,11 @@ if (strlen($_SESSION['admin_id']) == 0) {
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Product Title</label>
                                     <input type="text" class="form-control" name="prodTilte" placeholder="Enter Product title">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Product Price</label>
+                                    <input type="number" class="form-control" name="prodPrice" placeholder="Enter Product Price">
                                 </div>
 
                                 <div class="form-group">

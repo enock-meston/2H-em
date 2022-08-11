@@ -1,3 +1,7 @@
+<?php
+include 'user/include/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,37 +59,50 @@
           </div>
           <div class="row">
             <!-- Start Left Blog -->
+            <?php
+              $selectProduct = mysqli_query($con,"SELECT `pid`, `PostTitle`, `PostDetails`,
+               `prodPrice`, `thumbnail`, `date`, `status` FROM `producttbl` WHERE status=1");
+
+               while ($row= mysqli_fetch_array($selectProduct)) {
+               
+            ?>
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="single-blog">
                 <div class="single-blog-img">
                   <a href="blog.html">
-                    <img src="assets/img/blog/1.jpg" alt="">
+                    <img src="user/<?php echo $row['thumbnail'];?>" alt="">
                   </a>
                 </div>
                 <div class="blog-meta">
                   <span class="comments-type">
                     <i class="fa fa-comment-o"></i>
-                    <a href="#">13 comments</a>
+                    Price : <?php echo $row['prodPrice'];?>
                   </span>
                   <span class="date-type">
-                    <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
+                    <i class="fa fa-calendar"></i> Date: <?php echo $row['date'];?>
                   </span>
                 </div>
                 <div class="blog-text">
-                  <h4>
-                    <a href="blog.html">Assumenda repud eum veniam</a>
+                  <h4><?php echo $row['PostTitle'];?>
                   </h4>
                   <p>
-                    Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
+                    <?php echo $row['PostDetails'];?>
                   </p>
                 </div>
-                <span>
-                  <a href="blog.html" class="ready-btn">Read more</a>
-                </span>
               </div>
               <!-- Start single blog -->
             </div>
+
+            <?php
+               }
+            ?>
             <!-- End Left Blog-->
+
+
+
+
+
+            <!-- end of sample -->
             <!-- Start Left Blog -->
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="single-blog">
