@@ -43,6 +43,13 @@
          </div>
      </li>
 
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="message.php">
+             <i class="bi bi-envelope"></i>
+             <span>Messages</span>
+         </a>
+     </li>
+
      <!-- Divider -->
      <hr class="sidebar-divider d-none d-md-block">
 

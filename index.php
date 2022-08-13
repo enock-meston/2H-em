@@ -190,7 +190,8 @@ include 'user/include/config.php';
                   </div>
                   <div class="my-3">
                     <div class="loading">Loading</div>
-                    <div class="error-message"></div>
+                    <div class="error-message" style="display: none;color: #fff;background: #18d26e;text-align: center;padding: 15px;font-weight: 600;">
+                    </div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
                   </div>
                   <div class="text-center"><button type="submit">Send Message</button></div>
@@ -272,7 +273,6 @@ include 'user/include/config.php';
               </p>
             </div>
             <div class="credits">
-
               Designed by <a href="https://www.linkedin.com/in/nahayo-arthur-79b250245/">Nahayo Arthur</a>
             </div>
           </div>

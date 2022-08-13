@@ -1494,20 +1494,13 @@ div#preloader {
 
 .php-email-form .validate {
   display: none;
-  color: red;
+  color: #18d26e;
   margin: 0;
   font-weight: 400;
   font-size: 13px;
 }
 
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
+
 
 .php-email-form .sent-message {
   display: none;
