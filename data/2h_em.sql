@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2022 at 11:43 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.5
+-- Generation Time: Aug 13, 2022 at 05:17 PM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -39,7 +40,30 @@ CREATE TABLE `admintbl` (
 --
 
 INSERT INTO `admintbl` (`id`, `username`, `password`, `status`) VALUES
-(1, 'enock-meston', '$2y$10$IbSbjXoROOmSgDPSLcKxYOmrh3L2MJ9cX.m.jJr095ZClAMpkt1Gi', 1);
+(1, 'enock-meston', '$2y$10$IbSbjXoROOmSgDPSLcKxYOmrh3L2MJ9cX.m.jJr095ZClAMpkt1Gi', 1),
+(2, 'arthur', '$2y$10$IbSbjXoROOmSgDPSLcKxYOmrh3L2MJ9cX.m.jJr095ZClAMpkt1Gi', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `messages`
+--
+
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL,
+  `name` varchar(15) NOT NULL,
+  `email` varchar(25) NOT NULL,
+  `subject` varchar(20) NOT NULL,
+  `message` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `messages`
+--
+
+INSERT INTO `messages` (`id`, `name`, `email`, `subject`, `message`) VALUES
+(1, 'nahayo', 'nahayoarthur0@gmail.com', 'none', 'test 1'),
+(27, 'nahayo', 'nahayoarhur0@gmail.com', 'none', 'test 2');
 
 -- --------------------------------------------------------
 
@@ -63,8 +87,12 @@ CREATE TABLE `producttbl` (
 
 INSERT INTO `producttbl` (`pid`, `PostTitle`, `PostDetails`, `prodPrice`, `thumbnail`, `date`, `status`) VALUES
 (1, 'Gutters', 'big Gutters ', '2000', 'thurmbnail/IMG-62f57146d771b8.79217551.jpg', '2022-08-11 21:14:46', 1),
-(2, 'roofings', 'Big', '40000', 'thurmbnail/IMG-62f57164e804e2.00332491.jpg', '2022-08-11 21:15:16', 1),
-(3, 'stairs', 'all stairs', '23000', 'thurmbnail/IMG-62f5735a7578a6.06413018.jpg', '2022-08-11 21:23:38', 1);
+(3, 'stairs', 'all stairs', '23000', 'thurmbnail/IMG-62f5735a7578a6.06413018.jpg', '2022-08-11 21:23:38', 1),
+(4, 'Bed', 'very confy', '90000', 'thurmbnail/IMG-62f579c40a5621.94428547.jpg', '2022-08-11 21:51:00', 1),
+(5, 'Office chair', 'very confy', '80000', 'thurmbnail/IMG-62f7bebc520de0.62633138.jpg', '2022-08-13 15:09:48', 1),
+(6, 'PPGI', 'Colorful and strong', '12500', 'thurmbnail/IMG-62f7bf10f3c833.42622238.jpg', '2022-08-13 15:11:13', 1),
+(8, 'Sheets', 'they weight more compared to others, around 8kg', '8000', 'thurmbnail/IMG-62f7bfee37ced7.48171011.jpg', '2022-08-13 15:14:54', 1),
+(9, 'metals', 'anyshape you want', '3000', 'thurmbnail/IMG-62f7c03e8a1d06.67316187.jpg', '2022-08-13 15:16:14', 1);
 
 --
 -- Indexes for dumped tables
@@ -74,6 +102,12 @@ INSERT INTO `producttbl` (`pid`, `PostTitle`, `PostDetails`, `prodPrice`, `thumb
 -- Indexes for table `admintbl`
 --
 ALTER TABLE `admintbl`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `messages`
+--
+ALTER TABLE `messages`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -90,13 +124,19 @@ ALTER TABLE `producttbl`
 -- AUTO_INCREMENT for table `admintbl`
 --
 ALTER TABLE `admintbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `producttbl`
 --
 ALTER TABLE `producttbl`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
