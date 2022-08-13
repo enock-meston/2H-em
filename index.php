@@ -164,23 +164,14 @@ include 'user/include/config.php';
                 <div class="single-icon">
                   <i class="bi bi-geo-alt"></i>
                   <p>
-                    Location: A108 Adam Street<br>
-                    <span>NY 535022, USA</span>
+                    Location: Nyarugenge<br>
+                    <span>Kigali, Rwanda</span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-
-            <!-- Start Google Map -->
-            <div class="col-md-6">
-              <!-- Start Map -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-              <!-- End Map -->
-            </div>
-            <!-- End Google Map -->
-
             <!-- Start  contact -->
             <div class="col-md-6">
               <div class="form contact-form">
@@ -226,7 +217,7 @@ include 'user/include/config.php';
                   <h2><span>2</span>H-em</h2>
                 </div>
 
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <p></p>
                 <div class="footer-icons">
                   <ul>
                     <li>
@@ -252,7 +243,7 @@ include 'user/include/config.php';
               <div class="footer-head">
                 <h4>information</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  We are located
                 </p>
                 <div class="footer-contacts">
                   <p><span>Tel:</span> +250784061966</p>
@@ -265,17 +256,7 @@ include 'user/include/config.php';
           <!-- end single footer -->
           <div class="col-md-4">
             <div class="footer-content">
-              <div class="footer-head">
-                <h4>Instagram</h4>
-                <div class="flicker-img">
-                  <a href="#"><img src="assets/img/portfolio/1.jpg" alt=""></a>
-                  <a href="#"><img src="assets/img/portfolio/2.jpg" alt=""></a>
-                  <a href="#"><img src="assets/img/portfolio/3.jpg" alt=""></a>
-                  <a href="#"><img src="assets/img/portfolio/4.jpg" alt=""></a>
-                  <a href="#"><img src="assets/img/portfolio/5.jpg" alt=""></a>
-                  <a href="#"><img src="assets/img/portfolio/6.jpg" alt=""></a>
-                </div>
-              </div>
+           
             </div>
           </div>
         </div>
@@ -291,13 +272,8 @@ include 'user/include/config.php';
               </p>
             </div>
             <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=2H-em
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+              Designed by <a href="https://www.linkedin.com/in/nahayo-arthur-79b250245/">Nahayo Arthur</a>
             </div>
           </div>
         </div>
