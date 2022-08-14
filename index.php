@@ -69,7 +69,6 @@ include 'user/include/config.php';
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="single-blog">
                 <div class="single-blog-img">
-                  <a href="blog.html">
                     <img src="user/<?php echo $row['thumbnail'];?>" alt="">
                   </a>
                 </div>
