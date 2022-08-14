@@ -141,7 +141,7 @@ include 'user/include/config.php';
                   <p>
                     Call: +250788307559<br>
                     or: +250784061966<br>
-                    <span>Monday-Friday (9am-5pm)</span>
+                    
                   </p>
                 </div>
               </div>
@@ -219,22 +219,7 @@ include 'user/include/config.php';
                 </div>
 
                 <p></p>
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -244,7 +229,7 @@ include 'user/include/config.php';
               <div class="footer-head">
                 <h4>information</h4>
                 <p>
-                  We are located
+                <span>We are open from Monday-Saturday (7am-9pm)</span>, please get in contact for more information.
                 </p>
                 <div class="footer-contacts">
                   <p><span>Tel:</span> +250784061966</p>
