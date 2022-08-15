@@ -163,8 +163,8 @@ include 'user/include/config.php';
                 <div class="single-icon">
                   <i class="bi bi-geo-alt"></i>
                   <p>
-                    Location: Nyarugenge<br>
-                    <span>Kigali, Rwanda</span>
+                    Location: Kigali<br>
+                    <span>Rwanda</span>
                   </p>
                 </div>
               </div>
@@ -253,11 +253,11 @@ include 'user/include/config.php';
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
               <p>
-                &copy; Copyright <strong>2H-em</strong>. All Rights Reserved
+                &copy; Copyright <strong>2H-em</strong>.
               </p>
             </div>
             <div class="credits">
-              Designed by <a href="https://www.linkedin.com/in/nahayo-arthur-79b250245/">Nahayo Arthur</a>
+              Designed by <a href="https://www.linkedin.com/in/nahayo-arthur-79b250245/">Nahayo Arthur</a> & <a href="https://nigoote.com">nigoote.com</a>
             </div>
           </div>
         </div>
