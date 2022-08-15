@@ -151,8 +151,7 @@ include 'user/include/config.php';
                 <div class="single-icon">
                   <i class="bi bi-envelope"></i>
                   <p>
-                    Email: jirardc@gmail.com<br>
-                    or:  sindayigayaisaac5@gmail.com<br>
+                    Email: healthhygieneevents@gmail.com
                   </p>
                 </div>
               </div>
@@ -232,7 +231,7 @@ include 'user/include/config.php';
                 </p>
                 <div class="footer-contacts">
                   <p><span>Tel:</span> +250784061966</p>
-                  <p><span>Email:</span> jirardc@gmail.com</p>
+                  <p><span>Email:</span> healthhygieneevents@gmail.com</p>
                   <p><span>Working Hours:</span> 9am-5pm</p>
                 </div>
               </div>
