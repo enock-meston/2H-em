@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 16, 2022 at 04:51 AM
+-- Generation Time: Aug 16, 2022 at 04:57 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -40,9 +40,7 @@ CREATE TABLE `admintbl` (
 --
 
 INSERT INTO `admintbl` (`id`, `username`, `password`, `status`) VALUES
-(1, 'enock-meston', '$2y$10$IbSbjXoROOmSgDPSLcKxYOmrh3L2MJ9cX.m.jJr095ZClAMpkt1Gi', 1),
-(2, 'arthur', '$2y$10$IbSbjXoROOmSgDPSLcKxYOmrh3L2MJ9cX.m.jJr095ZClAMpkt1Gi', 1),
-(3, 'admin', '$2y$10$E4eiK7L6S2qCsBkggFL8teo1XjBQOqs7ZnktanDRvCQRBqH4hfvIy', 1);
+(1, 'admin', '$2y$10$E4eiK7L6S2qCsBkggFL8teo1XjBQOqs7ZnktanDRvCQRBqH4hfvIy', 1);
 
 -- --------------------------------------------------------
 
